@@ -1,0 +1,219 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e4ded0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.contenedor h1{
+    font-size: 80px;
+}
+
+.contenedor p{
+    font-size: 25px;
+    color: #58706d;
+}
+
+nav{
+    background: #114d4d;
+    height: 80px;
+    box-shadow: black 0px 8px 24px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav a{
+    flex: 1;
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    transition: .2s ease-in-out all;
+    font-weight: 500;
+}
+
+nav a:hover{
+    background: #648a64;
+    color: white;
+}
+
+nav .indicador{
+    width: 0px;
+    height: 7px;
+    background: cornflowerblue;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-out all;
+}
+
+.seccion{
+    min-height: 100vh;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion .card{
+    background: #c5b89f;
+    height: 90%;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: black 0px 8px 24px;
+}
+
+.seccion h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.seccion p{
+    line-height: 38px;
+    margin-bottom: 40px;
+    color: black;
+    font-size: 20px;
+}
+
+.seccion img{
+    width: 70%;
+    margin-left: 15%;
+    vertical-align: top;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.seccion img:hover{
+    transform: scale(1.5);
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: justify;
+}
+
+table td{
+    border: 2px solid black;
+    padding: 20px;
+}
+
+table tr:hover{
+    background-color: #525252;
+}
+
+table td:hover{
+    background-color: #822626; 
+    color: white;
+    text-decoration: underline;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #525252;
+    color: white;
+    border-radius: 8px;
+    border: solid black 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #822626;
+    color: white;
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #690202;
+    color: white;
+}
+
+.redes-container{
+    display: block;
+    margin-top: 50px;
+    margin-left: 65%;
+}
+
+.redes-container img{
+    padding: 10px;
+    width: 50px;
+}
+
+.seccion .icono{
+    width: 40px;
+    margin-left: 20px;
+}
+
+footer{
+    background-color: #114d4d;
+    color: white;
+    clear: both;
+    padding: 15px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    nav a{
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav a{
+        font-size: 12px;
+    }
+}
